@@ -11,6 +11,6 @@ This site provides information about TABONO and its data practices.
 
 [Read the TABONO Privacy Policy](privacy-policy/)
 
-**Publisher:** [Replace with your legal name or publishing entity]
+**Publisher:** Nayana Adassuriya
 
-**Support and privacy contact:** [Replace with a monitored contact email]
+**Support and privacy contact:** [nayana4u@gmail.com](mailto:nayana4u@gmail.com)

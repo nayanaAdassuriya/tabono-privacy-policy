@@ -7,11 +7,11 @@ permalink: /privacy-policy/
 
 **Last updated:** September 26, 2026
 
-**Publisher:** [Replace with your legal name or publishing entity]
+**Publisher:** Nayana Adassuriya
 
-**Privacy contact:** [Replace with a monitored contact email]
+**Privacy contact:** [nayana4u@gmail.com](mailto:nayana4u@gmail.com)
 
-> **Before publishing:** Replace both bracketed publisher details. Review this policy against the final release build, Google OAuth configuration, and the data-use declarations in the Chrome Web Store dashboard. This page is a description of the current extension implementation, not a substitute for legal advice.
+> **Before publishing:** Review this policy against the final release build, Google OAuth configuration, and the data-use declarations in the Chrome Web Store dashboard. This page is a description of the current extension implementation, not a substitute for legal advice.
 
 ## Scope
 
