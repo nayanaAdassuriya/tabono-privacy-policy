@@ -11,7 +11,6 @@ permalink: /privacy-policy/
 
 **Privacy contact:** [nayana4u@gmail.com](mailto:nayana4u@gmail.com)
 
-> **Before publishing:** Review this policy against the final release build, Google OAuth configuration, and the data-use declarations in the Chrome Web Store dashboard. This page is a description of the current extension implementation, not a substitute for legal advice.
 
 ## Scope
 
