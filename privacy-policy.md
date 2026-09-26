@@ -3,8 +3,6 @@ title: Privacy Policy
 permalink: /privacy-policy/
 ---
 
-# TABONO Privacy Policy
-
 **Last updated:** September 26, 2026
 
 **Publisher:** Nayana Adassuriya
