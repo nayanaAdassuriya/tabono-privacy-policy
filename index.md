@@ -3,7 +3,6 @@ title: TABONO
 permalink: /
 ---
 
-# TABONO
 
 TABONO is a Chrome productivity workspace for organizing projects, tasks, schedules, bookmarks, and notes. Workspace information is stored in your browser, with optional Google Calendar and Google Drive integration.
 
