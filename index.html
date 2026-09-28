@@ -9,12 +9,15 @@
   <meta name="theme-color" content="#2e3047">
   <link rel="canonical" href="https://tabono.alphamindx.com/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TABONO">
   <meta property="og:title" content="TABONO: Your productivity new tab for Chrome">
   <meta property="og:description" content="Tasks, calendar, bookmarks and notes in every new tab. Private by design.">
   <meta property="og:url" content="https://tabono.alphamindx.com/">
   <meta property="og:image" content="https://tabono.alphamindx.com/assets/img/logo-128.png">
   <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
   <link rel="icon" href="/assets/img/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/inter-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
@@ -23,7 +26,7 @@
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="/" aria-label="TABONO home">
-        <img class="brand-logo" src="/assets/img/logo.svg" alt="" width="34" height="34">
+        <img class="brand-logo" src="/assets/img/logo.svg" alt="" width="32" height="32">
         TABONO
       </a>
       <nav class="site-nav" aria-label="Main">
@@ -36,99 +39,131 @@
   </header>
 
   <main id="main">
-    <!-- Hero -->
+    <!-- ============ Hero ============ -->
     <section class="hero">
       <div class="wrap">
-        <div>
-          <span class="eyebrow">
-            <svg class="icon" aria-hidden="true" style="width:15px;height:15px"><use href="/assets/img/icons.svg#i-lock"/></svg>
-            Free Chrome extension · Private by design
-          </span>
-          <h1>Your whole day, in <span>every new tab</span>.</h1>
-          <p class="lead">TABONO turns Chrome's new tab into a calm, personal workspace: plan tasks, see your calendar, keep your bookmarks tidy and write notes, all in one place.</p>
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="badge">Free</span> A calmer new tab for Chrome</span>
+          <h1>Your whole day,<br>in <span class="accent">every new tab</span>.</h1>
+          <p class="lead">TABONO turns Chrome's new tab into a personal workspace. Plan tasks, see your calendar, keep bookmarks tidy and write notes, all in one quiet place.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/knfljfniakaldkdiifnanaeakpfcfmac">
               <svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-plus"/></svg>
               Add to Chrome, it's free
             </a>
-            <a class="btn btn-ghost" href="/user-guide/">
-              Read the user guide
+            <a class="btn btn-ghost btn-arrow" href="/user-guide/">
+              See how it works
               <svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-arrow"/></svg>
             </a>
           </div>
-          <ul class="hero-trust">
+          <ul class="hero-note">
             <li><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-check"/></svg>No servers</li>
             <li><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-check"/></svg>No ads or tracking</li>
             <li><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-check"/></svg>Backed up to your own Google Drive</li>
           </ul>
         </div>
+      </div>
 
-        <!-- Workspace preview (illustration) -->
-        <div class="mock" role="img" aria-label="Illustration of the TABONO workspace showing a task board">
-          <div class="mock-bar"><span></span><span></span><span></span></div>
-          <div class="mock-body">
-            <div class="mock-dock"><i></i><i></i><i></i><i></i><i></i></div>
-            <div class="mock-side">
-              <b class="on" style="width:80%"></b><b style="width:65%"></b><b style="width:72%"></b><b style="width:55%"></b>
-              <b style="width:68%;margin-top:10px"></b><b style="width:50%"></b>
+      <!-- Product illustration: an HTML/CSS rendering of the workspace -->
+      <div class="showcase" role="img" aria-label="Illustration of the TABONO workspace: a project board with tasks to do, in progress and done">
+        <div class="app-window" aria-hidden="true">
+          <div class="app-chrome">
+            <div class="app-dots"><span></span><span></span><span></span></div>
+            <div class="app-tab"><img src="/assets/img/logo.svg" alt="">New Tab</div>
+          </div>
+          <div class="app-body">
+            <div class="app-dock">
+              <img class="logo" src="/assets/img/logo.svg" alt="">
+              <span><svg class="icon"><use href="/assets/img/icons.svg#i-home"/></svg></span>
+              <span class="on"><svg class="icon"><use href="/assets/img/icons.svg#i-tasks"/></svg></span>
+              <span><svg class="icon"><use href="/assets/img/icons.svg#i-calendar"/></svg></span>
+              <span><svg class="icon"><use href="/assets/img/icons.svg#i-bookmark"/></svg></span>
+              <span><svg class="icon"><use href="/assets/img/icons.svg#i-notes"/></svg></span>
             </div>
-            <div class="mock-main">
-              <div class="mock-col">
-                <h4>To do</h4>
-                <div class="mock-card">Weekly grocery shopping<small>Sat · 10:00</small></div>
-                <div class="mock-card warm">Book anniversary dinner<small>High priority</small></div>
+            <div class="app-side">
+              <h5>Projects</h5>
+              <div class="group">Ongoing</div>
+              <div class="item on"><i class="dot" style="background:#7ebe4d"></i>Home &amp; Family<span class="count">6</span></div>
+              <div class="item"><i class="dot" style="background:#f59e0b"></i>Kids &amp; School<span class="count">3</span></div>
+              <div class="item"><i class="dot" style="background:#8b5cf6"></i>Car<span class="count">2</span></div>
+              <div class="group">Not started</div>
+              <div class="item"><i class="dot" style="background:#0ea5e9"></i>Summer Holiday<span class="count">2</span></div>
+            </div>
+            <div class="app-main">
+              <div class="app-main-head">
+                <h5>Home &amp; Family</h5>
+                <div class="seg"><span>List</span><span class="on">Board</span></div>
               </div>
-              <div class="mock-col">
-                <h4>In progress</h4>
-                <div class="mock-card">Renew car insurance<small>Tue · 12:00</small></div>
-                <div class="mock-card">Birthday present for Mia<small>Thu · 18:00</small></div>
-              </div>
-              <div class="mock-col">
-                <h4>Done</h4>
-                <div class="mock-card done">Swimming pick-up</div>
-                <div class="mock-card done">Team meeting</div>
+              <div class="board">
+                <div class="board-col">
+                  <h6><i style="background:#94a3b8"></i>Not started<b>3</b></h6>
+                  <div class="task"><div class="title">Weekly grocery shopping</div><div class="meta"><span class="chip high">High</span>Sat · 10:00</div></div>
+                  <div class="task"><div class="title">Book anniversary dinner</div><div class="meta"><span class="chip high">High</span>Wed · 12:30</div></div>
+                  <div class="task"><div class="title">Dentist appointment</div><div class="meta"><span class="chip med">Medium</span>Thu · 16:00</div></div>
+                </div>
+                <div class="board-col">
+                  <h6><i style="background:#7ebe4d"></i>In progress<b>2</b></h6>
+                  <div class="task"><div class="title">Pay electricity and water bills</div><div class="meta"><span class="chip high">Urgent</span>Tue · 19:00</div></div>
+                  <div class="task"><div class="title">Renew car insurance</div><div class="meta"><span class="chip med">Medium</span>Tue · 12:00</div></div>
+                </div>
+                <div class="board-col">
+                  <h6><i style="background:#60a5fa"></i>Completed<b>2</b></h6>
+                  <div class="task done"><div class="title">Team meeting at work</div><div class="meta"><span class="chip low">Done</span>Mon</div></div>
+                  <div class="task done"><div class="title">Swimming lesson pick-up</div><div class="meta"><span class="chip low">Done</span>Mon</div></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="showcase-fade"></div>
       </div>
     </section>
 
-    <!-- Features -->
+    <!-- ============ Trust strip ============ -->
+    <div class="strip">
+      <div class="wrap">
+        <span><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-puzzle"/></svg><strong>Built for Chrome</strong>&nbsp;new tab, side panel &amp; toolbar</span>
+        <span><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-calendar"/></svg>Works with <strong>Google Calendar</strong></span>
+        <span><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-cloud"/></svg>Backed up to <strong>Google Drive</strong></span>
+      </div>
+    </div>
+
+    <!-- ============ Features ============ -->
     <section class="section" id="features">
       <div class="wrap">
         <div class="section-head">
+          <span class="kicker">Features</span>
           <h2>Everything you need, one tab away</h2>
           <p>Six simple tools that work together, so the plan for your day is waiting every time you open a new tab.</p>
         </div>
-        <div class="grid-3">
+        <div class="features">
           <article class="feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-tasks"/></svg></div>
+            <div class="icon-tile"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-tasks"/></svg></div>
             <h3>Projects &amp; tasks</h3>
             <p>Group tasks into projects like Home, Kids or Work. Use a list or a board, set priorities and dates, and move things along as you go.</p>
           </article>
           <article class="feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-calendar"/></svg></div>
+            <div class="icon-tile"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-calendar"/></svg></div>
             <h3>Calendar</h3>
             <p>See your day, week or month. Scheduled tasks sync with Google Calendar, next to the calendars you already use.</p>
           </article>
           <article class="feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-bookmark"/></svg></div>
+            <div class="icon-tile"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-bookmark"/></svg></div>
             <h3>Bookmarks</h3>
             <p>Organise links into spaces and collections. Save all your open tabs in one click and find anything with search.</p>
           </article>
           <article class="feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-notes"/></svg></div>
+            <div class="icon-tile"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-notes"/></svg></div>
             <h3>Notes</h3>
             <p>Notebooks with pages for lists, plans and recipes. Write long documents or pin quick sticky notes, and link them to tasks.</p>
           </article>
           <article class="feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-home"/></svg></div>
+            <div class="icon-tile"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-home"/></svg></div>
             <h3>Home dashboard</h3>
             <p>Your most visited sites and favourite shortcuts, shown as icons, cards or a list, plus a panel of your open tabs.</p>
           </article>
           <article class="feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-cloud"/></svg></div>
+            <div class="icon-tile"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-cloud"/></svg></div>
             <h3>Sync across computers</h3>
             <p>Your workspace is backed up to a private folder in your own Google Drive and merged across every computer you use.</p>
           </article>
@@ -136,40 +171,134 @@
       </div>
     </section>
 
-    <!-- Privacy -->
-    <section class="section alt" id="privacy">
+    <!-- ============ Spotlights ============ -->
+    <section class="section tint">
+      <div class="wrap">
+        <div class="spotlight">
+          <div class="spot-copy">
+            <span class="kicker">Calendar</span>
+            <h3>Your tasks and your calendar, side by side</h3>
+            <p>Give a task a time and it appears on your calendar, in its own "Tabono Tasks" calendar in Google. Drag it to move it, stretch it to change how long it takes.</p>
+            <ul class="checks">
+              <li><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-check"/></svg>Day, week and month views</li>
+              <li><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-check"/></svg>See your other Google calendars alongside</li>
+              <li><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-check"/></svg>Repeating tasks: daily, weekly, monthly and more</li>
+            </ul>
+          </div>
+          <div class="panel" role="img" aria-label="Illustration of a week calendar with scheduled tasks">
+            <div class="panel-head"><strong>This week</strong><span>Tabono Tasks · Family</span></div>
+            <div class="cal" aria-hidden="true">
+              <div></div><div class="d">Mon 22</div><div class="d">Tue 23</div><div class="d today">Wed 24</div><div class="d">Thu 25</div><div class="d">Fri 26</div>
+              <div class="t">9:00</div><div class="slot"><div class="ev b">Team meeting</div></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"><div class="ev g tall">Fix kitchen tap</div></div>
+              <div class="t">12:00</div><div class="slot"></div><div class="slot"><div class="ev a">Car insurance</div></div><div class="slot"><div class="ev g">Book dinner</div></div><div class="slot"></div><div class="slot"></div>
+              <div class="t">15:00</div><div class="slot"></div><div class="slot"></div><div class="slot"><div class="ev a tall">Parent-teacher</div></div><div class="slot"><div class="ev b">Dentist</div></div><div class="slot"></div>
+              <div class="t">18:00</div><div class="slot"><div class="ev g">Swimming</div></div><div class="slot"><div class="ev g">Pay bills</div></div><div class="slot"></div><div class="slot"><div class="ev b">Buy present</div></div><div class="slot"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spotlight reverse">
+          <div class="spot-copy">
+            <span class="kicker">Bookmarks</span>
+            <h3>Every link where you expect it</h3>
+            <p>Keep bookmarks in spaces, like Home or Work, and group them into collections. Closing a busy window? Save all its tabs as a collection in one click.</p>
+            <ul class="checks">
+              <li><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-check"/></svg>Card, compact, list and grid layouts</li>
+              <li><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-check"/></svg>Search one space or all of them</li>
+              <li><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-check"/></svg>Star favourites and sort them your way</li>
+            </ul>
+          </div>
+          <div class="panel" role="img" aria-label="Illustration of bookmark collections in a space">
+            <div aria-hidden="true">
+              <div class="bm-space"><span class="on">Home</span><span>Work &amp; Research</span><span>Travel</span></div>
+              <div class="bm-col">
+                <h6>Daily</h6>
+                <div class="bm-grid">
+                  <div class="bm"><i style="background:#ea4335"></i>Gmail</div>
+                  <div class="bm"><i style="background:#4285f4"></i>Calendar</div>
+                  <div class="bm"><i style="background:#ff0000"></i>YouTube</div>
+                  <div class="bm"><i style="background:#34a853"></i>Maps</div>
+                </div>
+              </div>
+              <div class="bm-col">
+                <h6>Recipes</h6>
+                <div class="bm-grid">
+                  <div class="bm"><i style="background:#f59e0b"></i>Pancakes</div>
+                  <div class="bm"><i style="background:#ef4444"></i>Pasta bake</div>
+                  <div class="bm"><i style="background:#10b981"></i>Green curry</div>
+                </div>
+              </div>
+              <div class="bm-col">
+                <h6>School</h6>
+                <div class="bm-grid">
+                  <div class="bm"><i style="background:#8b5cf6"></i>Class portal</div>
+                  <div class="bm"><i style="background:#0ea5e9"></i>Reading list</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spotlight">
+          <div class="spot-copy">
+            <span class="kicker">Notes</span>
+            <h3>Quick notes and full documents</h3>
+            <p>Pin sticky notes for lists and reminders, or write a full page with headings, checklists and images. Attach a page to a task so the details are there when you need them.</p>
+            <ul class="checks">
+              <li><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-check"/></svg>Notebooks with as many pages as you like</li>
+              <li><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-check"/></svg>Rich text or plain text</li>
+              <li><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-check"/></svg>Saved automatically as you type</li>
+            </ul>
+          </div>
+          <div class="panel" role="img" aria-label="Illustration of colourful sticky notes">
+            <div class="panel-head"><strong>Family Notebook · Sticky Notes</strong><span>6 notes</span></div>
+            <div class="notes" aria-hidden="true">
+              <div class="note y"><strong>Grocery list</strong>Milk, eggs, bread, bananas, chicken for Sunday</div>
+              <div class="note g"><strong>School run</strong>Mon/Wed: me · Tue/Thu: Grandma</div>
+              <div class="note b"><strong>Movie night</strong>Paddington 2, Finding Nemo</div>
+              <div class="note p"><strong>Gift ideas</strong>Weekend by the sea, cooking class</div>
+              <div class="note o"><strong>Pancakes</strong>1 cup flour, 1 cup milk, 1 egg</div>
+              <div class="note c"><strong>Garden</strong>Mow the lawn, water the tomatoes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Privacy ============ -->
+    <section class="section dark" id="privacy">
       <div class="wrap">
         <div class="section-head">
+          <span class="kicker">Privacy</span>
           <h2>Private by design</h2>
           <p>TABONO has no servers. Your information stays on your computer and in your own Google account.</p>
         </div>
-        <div class="grid-3">
-          <article class="feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-lock"/></svg></div>
+        <div class="pillars">
+          <article class="pillar">
+            <div class="icon-tile"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-lock"/></svg></div>
             <h3>Your data stays yours</h3>
             <p>Tasks, notes and bookmarks are saved in your browser and backed up to your Google Drive. We never receive a copy.</p>
           </article>
-          <article class="feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-ban"/></svg></div>
+          <article class="pillar">
+            <div class="icon-tile"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-ban"/></svg></div>
             <h3>Nothing is sold</h3>
             <p>No ads, no analytics and no tracking. We don't collect anything about you or how you use TABONO.</p>
           </article>
-          <article class="feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-eye-off"/></svg></div>
+          <article class="pillar">
+            <div class="icon-tile"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-eye-off"/></svg></div>
             <h3>Browsing stays private</h3>
             <p>Your most visited sites and open tabs are read on your device only, to show them on your new tab. They are never sent anywhere.</p>
           </article>
         </div>
-        <p style="text-align:center;margin:32px 0 0">
-          <a href="/privacy-policy/">Read the full privacy policy</a>
-        </p>
+        <p class="center-link"><a href="/privacy-policy/">Read the full privacy policy</a></p>
       </div>
     </section>
 
-    <!-- How it works -->
+    <!-- ============ How it works ============ -->
     <section class="section">
       <div class="wrap">
         <div class="section-head">
+          <span class="kicker">Getting started</span>
           <h2>Up and running in a minute</h2>
         </div>
         <ol class="steps">
@@ -186,13 +315,50 @@
             <p>Create a project, add tasks and see them on your calendar.</p>
           </li>
         </ol>
+      </div>
+    </section>
 
-        <div class="cta" style="margin-top:64px">
+    <!-- ============ FAQ ============ -->
+    <section class="section tint" id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">FAQ</span>
+          <h2>Questions, answered</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Is TABONO free?</summary>
+            <p>Yes. TABONO is free to install and use, with no ads.</p>
+          </details>
+          <details>
+            <summary>Where is my information stored?</summary>
+            <p>In your browser on your computer, and in a private, hidden folder in your own Google Drive. TABONO has no servers, so AlphaMindX never receives a copy.</p>
+          </details>
+          <details>
+            <summary>Can I use TABONO on more than one computer?</summary>
+            <p>Yes. Sign in with the same Google account on each computer and your workspace is kept in step through your Google Drive backup.</p>
+          </details>
+          <details>
+            <summary>Why does TABONO need a Google account?</summary>
+            <p>Signing in lets TABONO back up your workspace to your Google Drive and show your scheduled tasks in Google Calendar. It only changes events for its own tasks; your other calendars are shown read-only.</p>
+          </details>
+          <details>
+            <summary>How do I delete my data?</summary>
+            <p>Delete items in TABONO, or reset the whole workspace in Settings. You can also remove TABONO's backup from Google Drive and revoke its access in your Google account. The <a href="/privacy-policy/#manage">privacy policy</a> explains each step.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section">
+      <div class="wrap">
+        <div class="cta">
           <h2>Make every new tab count</h2>
           <p>Free, private and ready when you are.</p>
           <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/knfljfniakaldkdiifnanaeakpfcfmac">
             <svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-plus"/></svg>
-            Add to Chrome
+            Add to Chrome, it's free
           </a>
         </div>
       </div>
@@ -204,23 +370,29 @@
       <div class="footer-grid">
         <div>
           <a class="brand" href="/" aria-label="TABONO home">
-            <img class="brand-logo" src="/assets/img/logo.svg" alt="" width="34" height="34">
+            <img class="brand-logo" src="/assets/img/logo.svg" alt="" width="32" height="32">
             TABONO
           </a>
-          <p>Your productivity new tab: tasks, calendar, bookmarks and notes in one place. Developed by <a href="https://alphamindx.com">AlphaMindX</a>.</p>
+          <p>Your productivity new tab: tasks, calendar, bookmarks and notes in one place.</p>
         </div>
         <div>
           <h3>Product</h3>
           <ul>
             <li><a href="/#features">Features</a></li>
-            <li><a href="/user-guide/">User guide</a></li>
+            <li><a href="/#faq">FAQ</a></li>
             <li><a href="https://chromewebstore.google.com/detail/knfljfniakaldkdiifnanaeakpfcfmac">Chrome Web Store</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="/user-guide/">User guide</a></li>
+            <li><a href="/privacy-policy/">Privacy policy</a></li>
           </ul>
         </div>
         <div>
           <h3>Company</h3>
           <ul>
-            <li><a href="/privacy-policy/">Privacy policy</a></li>
             <li><a href="https://alphamindx.com">AlphaMindX</a></li>
             <li><a href="mailto:tabono@alphamindx.com">tabono@alphamindx.com</a></li>
           </ul>

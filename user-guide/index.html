@@ -10,6 +10,8 @@
   <link rel="canonical" href="https://tabono.alphamindx.com/user-guide/">
   <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
   <link rel="icon" href="/assets/img/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/inter-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
@@ -18,7 +20,7 @@
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="/" aria-label="TABONO home">
-        <img class="brand-logo" src="/assets/img/logo.svg" alt="" width="34" height="34">
+        <img class="brand-logo" src="/assets/img/logo.svg" alt="" width="32" height="32">
         TABONO
       </a>
       <nav class="site-nav" aria-label="Main">
@@ -33,8 +35,14 @@
   <main id="main">
     <section class="page-hero">
       <div class="wrap">
+        <ol class="crumbs"><li><a href="/">Home</a></li><li aria-current="page">User guide</li></ol>
         <h1>User Guide</h1>
         <p>Everything you need to plan your day with TABONO: projects and tasks, calendar, bookmarks, notes and sync.</p>
+        <div class="page-meta">
+          <span><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-book"/></svg>10 sections</span>
+          <span><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-info"/></svg>Updated September 2026</span>
+          <span><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-mail"/></svg>Help: <a href="mailto:tabono@alphamindx.com">tabono@alphamindx.com</a></span>
+        </div>
       </div>
     </section>
 
@@ -144,7 +152,7 @@
 
         <h3>Resetting your workspace</h3>
         <p>To delete everything, open <strong>Data &amp; Maintenance</strong>, expand the <strong>Danger zone</strong> and choose <strong>Reset Workspace</strong>. To prevent accidents, TABONO shows exactly what will be deleted, asks you to type your Google account email, and waits 10 seconds before the delete button works.</p>
-        <div class="callout">
+        <div class="callout warn">
           <svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-info"/></svg>
           <p>A reset also removes your data from your Google Drive backup and your other computers, and it cannot be undone. Export a backup first if you might need your data again. Restoring a backup file replaces your current workspace.</p>
         </div>
@@ -164,23 +172,29 @@
       <div class="footer-grid">
         <div>
           <a class="brand" href="/" aria-label="TABONO home">
-            <img class="brand-logo" src="/assets/img/logo.svg" alt="" width="34" height="34">
+            <img class="brand-logo" src="/assets/img/logo.svg" alt="" width="32" height="32">
             TABONO
           </a>
-          <p>Your productivity new tab: tasks, calendar, bookmarks and notes in one place. Developed by <a href="https://alphamindx.com">AlphaMindX</a>.</p>
+          <p>Your productivity new tab: tasks, calendar, bookmarks and notes in one place.</p>
         </div>
         <div>
           <h3>Product</h3>
           <ul>
             <li><a href="/#features">Features</a></li>
-            <li><a href="/user-guide/">User guide</a></li>
+            <li><a href="/#faq">FAQ</a></li>
             <li><a href="https://chromewebstore.google.com/detail/knfljfniakaldkdiifnanaeakpfcfmac">Chrome Web Store</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="/user-guide/">User guide</a></li>
+            <li><a href="/privacy-policy/">Privacy policy</a></li>
           </ul>
         </div>
         <div>
           <h3>Company</h3>
           <ul>
-            <li><a href="/privacy-policy/">Privacy policy</a></li>
             <li><a href="https://alphamindx.com">AlphaMindX</a></li>
             <li><a href="mailto:tabono@alphamindx.com">tabono@alphamindx.com</a></li>
           </ul>
@@ -192,5 +206,6 @@
       </div>
     </div>
   </footer>
+  <script src="/assets/js/toc.js" defer></script>
 </body>
 </html>
