@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · TABONO</title>
+  <meta name="description" content="How TABONO handles your information: no servers, no tracking, your data stays in your browser and your own Google account.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#2e3047">
+  <link rel="canonical" href="https://tabono.alphamindx.com/privacy-policy/">
+  <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/img/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="TABONO home">
+        <img class="brand-logo" src="/assets/img/logo.svg" alt="" width="34" height="34">
+        TABONO
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="/#features">Features</a>
+        <a href="/user-guide/">User guide</a>
+        <a href="/privacy-policy/" aria-current="page">Privacy</a>
+        <a class="btn btn-primary btn-sm" href="https://chromewebstore.google.com/detail/knfljfniakaldkdiifnanaeakpfcfmac">Add to Chrome</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Privacy Policy</h1>
+        <p>How the TABONO Chrome extension handles your information.</p>
+        <p class="meta">Last updated: September 28, 2026 · Developer: AlphaMindX · Contact: <a href="mailto:tabono@alphamindx.com" style="color:#a8e278">tabono@alphamindx.com</a></p>
+      </div>
+    </section>
+
+    <div class="wrap doc">
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#information">Information TABONO handles</a></li>
+          <li><a href="#google">Google account</a></li>
+          <li><a href="#drive-calendar">Google Drive and Calendar</a></li>
+          <li><a href="#external">External services</a></li>
+          <li><a href="#manage">Manage or delete information</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#limited-use">Google API Limited Use</a></li>
+          <li><a href="#children">Children</a></li>
+          <li><a href="#contact">Changes and contact</a></li>
+        </ol>
+      </nav>
+
+      <article class="prose">
+        <h2 id="summary">Summary</h2>
+        <ul class="summary-list">
+          <li><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-lock"/></svg><span>TABONO has no servers. Your workspace is stored in your browser and in your own Google account; AlphaMindX never receives a copy.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-ban"/></svg><span>TABONO does not sell, share or rent your information, shows no ads, and has no analytics or tracking.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-eye-off"/></svg><span>Your browsing history, top sites and open tabs are read on your device only and are never sent anywhere.</span></li>
+        </ul>
+
+        <h2 id="scope">Scope</h2>
+        <p>This policy applies to the TABONO Chrome extension, including its New Tab page, toolbar popup, and side panel. TABONO is a personal productivity workspace for projects, tasks, schedules, bookmarks, and notes, developed by <a href="https://alphamindx.com">AlphaMindX</a>.</p>
+
+        <h2 id="information">Information TABONO handles</h2>
+        <h3>Workspace information</h3>
+        <p>TABONO handles information you create or import, including project and task names and descriptions, statuses, priorities, dates and times, comments, task attachments and note links, bookmark titles and URLs, notebook and note content, and your preferences. Rich notes may include embedded images or other content you add.</p>
+        <p>Workspace records are stored in your browser using IndexedDB and Chrome extension storage. Earlier versions of TABONO also kept a copy of notebooks and note pages in Chrome's <code>storage.sync</code> area; current versions no longer do this and remove that copy when they start.</p>
+        <p>When a task is deleted, TABONO keeps a small deletion marker (the task ID, the linked calendar event ID and the deletion time, but no title or content) so that the deletion also reaches your other devices. Markers can be purged in <strong>Settings &gt; Data &amp; Maintenance</strong>.</p>
+
+        <h3>Browser information</h3>
+        <p>The Home feature uses Chrome's Top Sites and History APIs to display frequently visited sites. It queries up to 200 history entries from the preceding 30 days, combines them with Chrome's top-sites results, and displays up to 20 unique sites. This happens on your device only; the results are not saved by TABONO and are never sent anywhere.</p>
+        <p>When the Home or Bookmarks view is open, TABONO may read your open browser tabs to show their titles and URLs and let you switch to a tab. Open-tab details are not added to your saved workspace unless you choose to save a tab, a window, or a session as a favorite or bookmark collection. Chrome's internal pages are excluded.</p>
+        <p>TABONO does not edit or delete your Chrome browsing history.</p>
+
+        <h2 id="google">Google account and authentication</h2>
+        <p>Google sign-in is required to use TABONO. When you sign in, TABONO receives your name, email address, and profile photo from Google, and uses an OAuth access token to call Google APIs on your behalf. The sign-in details and token are stored in Chrome extension storage on your device and are used only from your browser; they are never sent to AlphaMindX.</p>
+        <p>TABONO uses the following Google permissions:</p>
+        <ul>
+          <li><strong>Your name, email address and profile photo</strong>, shown in TABONO's account dialog.</li>
+          <li><strong>Google Calendar</strong>: to list your calendars, show the calendars and events you select, and create and manage events for your TABONO tasks in a "Tabono Tasks" calendar. Google describes this permission as allowing an app to see, edit, share, and permanently delete calendars you can access. TABONO only changes events for its own tasks; events from your other calendars are shown read-only.</li>
+          <li><strong>Google Drive app data</strong>: to keep your workspace backup in a private, hidden folder in your Google Drive that only TABONO can access.</li>
+          <li><strong>Google Drive files created by TABONO</strong>: to upload files you choose to attach to a task. TABONO cannot see your other Drive files.</li>
+        </ul>
+
+        <h2 id="drive-calendar">Google Drive and Calendar data</h2>
+        <p>TABONO backs up your workspace (projects, tasks, bookmark collections, notebooks, note pages, and preferences) to the private app data folder in your Google Drive. Sync runs after edits, periodically while TABONO is open, and when you request it. When you use TABONO on several devices, their changes are merged record by record through this backup. The time of the last successful sync is stored on your device and shown in the account dialog.</p>
+        <p>If you attach a file to a task, TABONO uploads that file to your Google Drive. Scheduling a task sends its details (title, description, date, time and priority) to Google Calendar. Google processes this information under its own terms and privacy policy.</p>
+        <p>Signing out stops future requests to Google until you sign in again. It does not remove data already stored in Google Drive or Google Calendar; you can delete those copies in Google services.</p>
+
+        <h2 id="external">External services</h2>
+        <p>TABONO communicates directly with Google APIs (<code>www.googleapis.com</code> and <code>oauth2.googleapis.com</code>) for sign-in, profile details, Calendar, and Drive. It also makes these requests:</p>
+        <ul>
+          <li><strong>Website icons:</strong> to show a site's icon, TABONO requests it from Google's favicon service, or from DuckDuckGo's icon service as a fallback. The request contains only the website's domain name (for example, <code>github.com</code>).</li>
+          <li><strong>Profile photo:</strong> your Google profile photo is loaded from Google's image servers. If you have no photo, your initials are drawn locally.</li>
+        </ul>
+        <p>Fonts and all application code are bundled inside the extension; TABONO does not load remote code, fonts or scripts. These providers receive the network information needed to fulfill each request, such as your IP address. This website is hosted on GitHub Pages, which may process visitor IP addresses and request logs under GitHub's privacy policy.</p>
+        <p>AlphaMindX does not operate a backend for TABONO, does not receive your workspace records, and does not sell or use your information for advertising.</p>
+
+        <h2 id="manage">How to manage or delete information</h2>
+        <ul>
+          <li>Edit or delete projects, tasks, bookmarks, notebooks, and notes in TABONO.</li>
+          <li>Use <strong>Settings &gt; Data &amp; Maintenance</strong> to export a JSON workspace backup, purge old deletion markers, or reset the local workspace. Resetting local data does not delete copies already stored in Google services.</li>
+          <li>To remove copies in Google services, delete TABONO's hidden backup in Google Drive (<strong>Settings &gt; Manage apps &gt; TABONO &gt; Delete hidden app data</strong>), delete uploaded attachments from Google Drive, and delete events from Google Calendar.</li>
+          <li>Sign out, or remove TABONO's access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, to stop future Google API access. Removing access does not itself delete existing Drive or Calendar data.</li>
+          <li>Manage or revoke Chrome permissions at <code>chrome://extensions</code>. Features that need a revoked permission will no longer work.</li>
+          <li>Uninstalling TABONO removes its local data from your browser.</li>
+        </ul>
+
+        <h2 id="security">Security</h2>
+        <p>All requests to Google use HTTPS and Google OAuth. The extension runs under a strict Content Security Policy that allows only its own bundled code and connections to Google APIs, and note and bookmark content is sanitized before it is displayed. Workspace content is stored in your browser profile and in your Google account; TABONO does not add a separate encryption layer to local data, so protect access to your Chrome profile and device.</p>
+
+        <h2 id="limited-use">Google API Limited Use</h2>
+        <p>TABONO's use and transfer of information received from Google APIs will comply with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements. Google user data is used only to provide the sign-in, Calendar, Drive backup, and attachment features described above. It is not transferred to others, not used for advertising, and not read by humans, except with your consent, for security purposes, or as required by law.</p>
+
+        <h2 id="children">Children</h2>
+        <p>TABONO is not directed to children under 13 and does not knowingly collect information from them.</p>
+
+        <h2 id="contact">Changes and contact</h2>
+        <p>This policy may be updated when TABONO's data practices change. The latest version and its effective date will be published on this page. For privacy questions or requests, contact AlphaMindX at <a href="mailto:tabono@alphamindx.com">tabono@alphamindx.com</a>.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="/" aria-label="TABONO home">
+            <img class="brand-logo" src="/assets/img/logo.svg" alt="" width="34" height="34">
+            TABONO
+          </a>
+          <p>Your productivity new tab: tasks, calendar, bookmarks and notes in one place. Developed by <a href="https://alphamindx.com">AlphaMindX</a>.</p>
+        </div>
+        <div>
+          <h3>Product</h3>
+          <ul>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/user-guide/">User guide</a></li>
+            <li><a href="https://chromewebstore.google.com/detail/knfljfniakaldkdiifnanaeakpfcfmac">Chrome Web Store</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="/privacy-policy/">Privacy policy</a></li>
+            <li><a href="https://alphamindx.com">AlphaMindX</a></li>
+            <li><a href="mailto:tabono@alphamindx.com">tabono@alphamindx.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 AlphaMindX. All rights reserved.</span>
+        <span>TABONO is developed by <a href="https://alphamindx.com">AlphaMindX</a></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
